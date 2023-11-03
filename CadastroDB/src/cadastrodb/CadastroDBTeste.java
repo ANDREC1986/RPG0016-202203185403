@@ -16,10 +16,25 @@ import java.util.ArrayList;
  */
 public class CadastroDBTeste {    
         public static void main(String[] args) {
+/*          PessoaFisica tester = new PessoaFisica("",0,"","","","","","");
+            PessoaFisicaDAO.incluir(tester);
+            ArrayList<PessoaFisica> pessoas = PessoaFisicaDAO.getPessoas();
+            pessoas.forEach((e) -> e.exibir());
+*/
+
+/*        PessoaFisicaDAO.excluir(79);
+        ArrayList<PessoaFisica> pessoas = PessoaFisicaDAO.getPessoas();
+        pessoas.forEach((e) -> e.exibir());
+*/            
             
-            PessoaJuridica teste = new PessoaJuridica("33333333333",0,"André","Weberck 11","Rio de Janeiro","RJ","21999999999","a@a");
+/*            PessoaJuridica teste = new PessoaJuridica("33333333333",0,"André","Weberck 11","Rio de Janeiro","RJ","21999999999","a@a");
             PessoaJuridicaDAO.incluir(teste);
             ArrayList<PessoaJuridica> pessoas = PessoaJuridicaDAO.getPessoas();
             pessoas.forEach((e) -> e.exibir());         
+*/
+
+            PessoaJuridicaDAO.excluir(63);
+            ArrayList<PessoaJuridica> pessoas = PessoaJuridicaDAO.getPessoas();
+            pessoas.forEach((e) -> e.exibir());   
     }
 }

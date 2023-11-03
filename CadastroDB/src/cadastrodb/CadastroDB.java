@@ -41,7 +41,7 @@ public class CadastroDB {
                     case "1" -> {
                     String tipo = tipo();
                     Scanner pessoa = new Scanner(System.in);
-                    switch(tipo) {
+                    switch(tipo.toLowerCase()) {
                         case "f" -> {
                             PessoaFisica nova = new PessoaFisica("",0,"","","","","","");
                             System.out.println("Informe o Nome");
@@ -269,7 +269,7 @@ public class CadastroDB {
         while(tipo == null) {
             Scanner select = new Scanner(System.in);
             String opt = select.nextLine();            
-            switch(opt) {
+            switch(opt.toLowerCase()) {
                 case "f" -> {
                 tipo = "f";
                 } 
